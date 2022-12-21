@@ -33,6 +33,10 @@ class ArticlesController < ApplicationController
     @articles = Article.order('created_at DESC')
   end
              
+  def destroy
+    @article = Article.find(params[:id])
+    @article.destroy
+  end
   private
 
   def article_params
