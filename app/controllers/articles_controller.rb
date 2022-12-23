@@ -7,7 +7,7 @@ class ArticlesController < ApplicationController
     if @article.save
       redirect_to @article
     else
-      render action: 'new'
+      render action: 'new' #можно использовать redirect_to, но потеряеся переменная @article
     end
   end
 
