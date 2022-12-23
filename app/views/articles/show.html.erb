@@ -7,9 +7,9 @@
 <h3>Comments:</h3>
 <% @article.comments.each do |comment| %>
 	<p>
-		<h4><%= comment.author %></h4>
+		<i><h4><%= comment.author %></h4></i>
 		<br />
-		<%= comment.body %>
+		<i><%= comment.body %></i>
 		<br />
 		<br />
 		<span style="font-size: 75%; color: #999;">At <%= comment.created_at %></span>
