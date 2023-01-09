@@ -1,0 +1,16 @@
+current directory: /home/zakhar/projects/sample-blog-on-rails/vendor/bundle/ruby/3.1.0/gems/debug-1.7.0/ext/debug
+/home/zakhar/.rbenv/versions/3.1.2/bin/ruby -I /home/zakhar/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20230108-37384-emj6ht.rb extconf.rb
+creating Makefile
+
+current directory: /home/zakhar/projects/sample-blog-on-rails/vendor/bundle/ruby/3.1.0/gems/debug-1.7.0/ext/debug
+make DESTDIR\= clean
+
+current directory: /home/zakhar/projects/sample-blog-on-rails/vendor/bundle/ruby/3.1.0/gems/debug-1.7.0/ext/debug
+make DESTDIR\=
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/zakhar/projects/sample-blog-on-rails/vendor/bundle/ruby/3.1.0/gems/debug-1.7.0/ext/debug
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20230108-37384-n72c40/debug

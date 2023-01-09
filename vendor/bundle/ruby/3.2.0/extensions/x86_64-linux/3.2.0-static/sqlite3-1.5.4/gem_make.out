@@ -1,0 +1,82 @@
+current directory: /home/zakhar/projects/sample-blog-on-rails/vendor/bundle/ruby/3.2.0/gems/sqlite3-1.5.4/ext/sqlite3
+/home/zakhar/.rvm/rubies/ruby-3.2.0/bin/ruby -I /home/zakhar/.rvm/rubies/ruby-3.2.0/lib/ruby/3.2.0 extconf.rb
+Building sqlite3-ruby using packaged sqlite3.
+Extracting sqlite-autoconf-3400000.tar.gz into tmp/x86_64-linux-gnu/ports/sqlite3/3.40.0... OK
+Running 'configure' for sqlite3 3.40.0... OK
+Running 'compile' for sqlite3 3.40.0... OK
+Running 'install' for sqlite3 3.40.0... OK
+Activating sqlite3 3.40.0 (from /home/zakhar/projects/sample-blog-on-rails/vendor/bundle/ruby/3.2.0/gems/sqlite3-1.5.4/ports/x86_64-linux-gnu/sqlite3/3.40.0)...
+checking for whether -L/home/zakhar/projects/sample-blog-on-rails/vendor/bundle/ruby/3.2.0/gems/sqlite3-1.5.4/ports/x86_64-linux-gnu/sqlite3/3.40.0/lib is accepted as LDFLAGS... yes
+checking for whether -lsqlite3 is accepted as LDFLAGS... yes
+checking for whether -lz is accepted as LDFLAGS... yes
+checking for whether -lm is accepted as LDFLAGS... yes
+checking for sqlite3.h... yes
+checking for sqlite3_libversion_number() in -lsqlite3... yes
+checking for rb_proc_arity()... yes
+checking for rb_integer_pack()... yes
+checking for sqlite3_initialize()... yes
+checking for sqlite3_backup_init()... yes
+checking for sqlite3_column_database_name()... no
+checking for sqlite3_enable_load_extension()... yes
+checking for sqlite3_load_extension()... yes
+checking for sqlite3_open_v2()... yes
+checking for sqlite3_prepare_v2()... yes
+checking for sqlite3_int64 in sqlite3.h... yes
+checking for sqlite3_uint64 in sqlite3.h... yes
+creating Makefile
+
+current directory: /home/zakhar/projects/sample-blog-on-rails/vendor/bundle/ruby/3.2.0/gems/sqlite3-1.5.4/ext/sqlite3
+make DESTDIR\= sitearchdir\=./.gem.20230108-66074-9gwi3f sitelibdir\=./.gem.20230108-66074-9gwi3f clean
+
+current directory: /home/zakhar/projects/sample-blog-on-rails/vendor/bundle/ruby/3.2.0/gems/sqlite3-1.5.4/ext/sqlite3
+make DESTDIR\= sitearchdir\=./.gem.20230108-66074-9gwi3f sitelibdir\=./.gem.20230108-66074-9gwi3f
+compiling aggregator.c
+compiling backup.c
+backup.c: In function ‘init_sqlite3_backup’:
+backup.c:153:6: warning: old-style function definition [-Wold-style-definition]
+  153 | void init_sqlite3_backup()
+      |      ^~~~~~~~~~~~~~~~~~~
+backup.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+compiling database.c
+database.c: In function ‘init_sqlite3_database’:
+database.c:803:6: warning: old-style function definition [-Wold-style-definition]
+  803 | void init_sqlite3_database()
+      |      ^~~~~~~~~~~~~~~~~~~~~
+database.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+compiling exception.c
+compiling sqlite3.c
+sqlite3.c: In function ‘init_sqlite3_constants’:
+sqlite3.c:85:6: warning: old-style function definition [-Wold-style-definition]
+   85 | void init_sqlite3_constants()
+      |      ^~~~~~~~~~~~~~~~~~~~~~
+sqlite3.c: In function ‘Init_sqlite3_native’:
+sqlite3.c:130:6: warning: old-style function definition [-Wold-style-definition]
+  130 | void Init_sqlite3_native()
+      |      ^~~~~~~~~~~~~~~~~~~
+sqlite3.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+compiling statement.c
+statement.c: In function ‘init_sqlite3_statement’:
+statement.c:421:6: warning: old-style function definition [-Wold-style-definition]
+  421 | void init_sqlite3_statement()
+      |      ^~~~~~~~~~~~~~~~~~~~~~
+statement.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+linking shared-object sqlite3/sqlite3_native.so
+
+current directory: /home/zakhar/projects/sample-blog-on-rails/vendor/bundle/ruby/3.2.0/gems/sqlite3-1.5.4/ext/sqlite3
+make DESTDIR\= sitearchdir\=./.gem.20230108-66074-9gwi3f sitelibdir\=./.gem.20230108-66074-9gwi3f install
+/usr/bin/install -c -m 0755 sqlite3_native.so ./.gem.20230108-66074-9gwi3f/sqlite3
+
+current directory: /home/zakhar/projects/sample-blog-on-rails/vendor/bundle/ruby/3.2.0/gems/sqlite3-1.5.4/ext/sqlite3
+make DESTDIR\= sitearchdir\=./.gem.20230108-66074-9gwi3f sitelibdir\=./.gem.20230108-66074-9gwi3f clean
