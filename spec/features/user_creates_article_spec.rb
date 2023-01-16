@@ -17,5 +17,7 @@ feature "Article Creation" do
     fill_in :article_text, :with => 'textforarticle'
 
     click_button 'Save Article'
+
+    expect(page).to have_content 'Write your comment!'
   end
 end
