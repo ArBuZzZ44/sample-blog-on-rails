@@ -20,9 +20,12 @@ feature "Article Creation" do
     expect(page).to have_current_path(article_path(Article.last))
   end
 
-  # scenario "allows user to create comment" do 
-  #   visit article_path
+  scenario "allows user to create comment" do 
+    visit article_path(Article.last)
 
-  #   expect(page).to have_content 'Write your comment!'
-  # end
+    fill_in :comment_author, :with => 'John'
+    fill_in :comment_body, :with => 'hahaha'
+
+    click_button 'Create Comment'
+  end
 end
