@@ -17,6 +17,11 @@ feature "Article Creation" do
   scenario "allows user to edit the article" do 
     visit edit_article_path(Article.last)
 
-    expect(page).to have_content 'Edit article'
+    fill_in :article_title, :with => 'HeyHey'
+    fill_in :article_text, :with => 'HoHo'
+
+    click_button 'Save Article'
+
+    expect(page).to have_current_path(article_path(Article.last))
   end
 end
