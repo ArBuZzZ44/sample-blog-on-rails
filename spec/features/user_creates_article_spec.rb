@@ -11,13 +11,16 @@ feature "Article Creation" do
   end
 
   scenario "allows user to create article" do
-    visit new_article_path
-
-    fill_in :article_title, :with => 'titleexample'
-    fill_in :article_text, :with => 'textforarticle'
-
-    click_button 'Save Article'
+    create_article
 
     expect(page).to have_content 'Write your comment!'
+  end
+
+  scenario "allows user to visit article#index" do
+    create_article
+    
+    visit articles_path
+
+    expect(page).to have_content 'Added at'
   end
 end
