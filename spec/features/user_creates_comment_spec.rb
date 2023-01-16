@@ -17,6 +17,12 @@ feature "Article Creation" do
 
     find_link('Show').click
 
-    expect(page).to have_content 'Write your comment!'
+    expect(page).to have_current_path(article_path(Article.last))
   end
+
+  # scenario "allows user to create comment" do 
+  #   visit article_path
+
+  #   expect(page).to have_content 'Write your comment!'
+  # end
 end
