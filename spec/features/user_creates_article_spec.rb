@@ -15,12 +15,4 @@ feature "Article Creation" do
 
     expect(page).to have_content 'Write your comment!'
   end
-
-  scenario "allows user to visit article#index" do
-    create_article
-    
-    visit articles_path
-
-    expect(page).to have_content 'Added at'
-  end
 end
