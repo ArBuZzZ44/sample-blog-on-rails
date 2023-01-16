@@ -27,5 +27,7 @@ feature "Article Creation" do
     fill_in :comment_body, :with => 'hahaha'
 
     click_button 'Create Comment'
+
+    expect(page).to have_content 'Comments'
   end
 end
