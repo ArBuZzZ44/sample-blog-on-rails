@@ -8,3 +8,12 @@ def sign_up
 
     click_button 'Sign up'
   end
+
+def create_article
+  visit new_article_path
+
+  fill_in :article_title, :with => 'titleexample'
+  fill_in :article_text, :with => 'textforarticle'
+
+   click_button 'Save Article'
+end
